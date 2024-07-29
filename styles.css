@@ -1,0 +1,213 @@
+/* CSS */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #212121; /* Dark background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ancho del header */
+  margin: 0 auto; /* Centrar el header */
+  border-bottom: 1px solid #444; /* Agrega un borde inferior */
+  position: fixed; /* Fija la barra de navegación */
+  top: 0; /* Posición superior */
+  left: 0; /* Posición izquierda */
+  right: 0; /* Posición derecha */
+  z-index: 1; /* Eleva la barra de navegación */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ccc;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Hero Styles */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content {
+  flex-basis: 50%;
+  margin: 20px;
+}
+
+.hero-image {
+  flex-basis: 50%;
+  margin: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.github {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.quienes-somos {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Blog Styles */
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-post {
+  flex-basis: 30%;
+  margin: 20px;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  margin-top: 0;
+}
+
+.blog-post img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.leer-mas {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.leer-mas:hover {
+  background-color: #444;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
